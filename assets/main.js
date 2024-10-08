@@ -11,10 +11,13 @@ lamp_btnEl.addEventListener("click", function() {
     // faccio comparire o sparire la seconda immagine, ma al contrario della prima
     lamp_on_imgEl.classList.toggle("d-none");
 
+    console.log(lamp_btnEl.innerText);
+    console.log(lamp_btnEl.innerText.includes("Accendi"));
+    
     // modifico la scritta del bottone
     if (lamp_btnEl.innerText.includes("Accendi")) {
-        lamp_btnEl.innerText.replace("Accendi", "Spegni");
+        lamp_btnEl.innerText = lamp_btnEl.innerText.replace("Accendi", "Spegni");
     } else if (lamp_btnEl.innerText.includes("Spegni")) {
-        lamp_btnEl.innerText.replace("Spegni", "Accendi")
+        lamp_btnEl.innerText = lamp_btnEl.innerText.replace("Spegni", "Accendi")
     }
 });
