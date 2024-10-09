@@ -21,3 +21,11 @@ lamp_btnEl.addEventListener("click", function() {
         lamp_btnEl.innerText = lamp_btnEl.innerText.replace("Spegni", "Accendi")
     }
 });
+
+// si può anche usare this con la funzione normale per selezionare il bottone
+
+// per le lampadine si può fare anche così, assegnando un nuovo valore all'attributo src
+// lamp_off_imgEl.src = "./img/yellow_lamp.png"
+
+// oppure usando questo metodo
+//  lamp_off_imgEl.setAttribute("src", "./img/yellow_lamp.png")
